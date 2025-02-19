@@ -17,12 +17,16 @@ const StaffCard = ({ staff, clients }) => {
       borderRadius: "10px"
     }}>
       {/* Image du staff */}
-      <img 
-        src={staff.image_url} 
-        alt={staff.name} 
-        width="100%" 
+      <img
+            src={staff.image_url} 
+            alt={staff.name} 
+            className="staff-image"
+            onError={(e) => {
+              e.target.src = '/logo192.png'; // Image par défaut si l'image ne charge pas
+            }}
+            width="100%" 
         style={{ borderRadius: "10px", marginBottom: "10px" }}
-      />
+          />
       
       <h3>{staff.name}</h3>
       <h1>{staff.clients_waiting}</h1>
