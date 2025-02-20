@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://h-m-api.onrender.com/api/";
+const API_URL = "https://h-m-api.onrender.com/api";
 
 export const loginCaissiere = async (username, password) => {
   try {
