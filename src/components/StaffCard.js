@@ -18,7 +18,7 @@ const StaffCard = ({ staff, clients }) => {
     }}>
       {/* Image du staff */}
       <img
-            src={staff.image_url} 
+            src={staff.image} 
             alt={staff.name} 
             className="staff-image"
             onError={(e) => {
