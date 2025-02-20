@@ -21,9 +21,9 @@ const StaffCard = ({ staff, clients }) => {
             src={staff.image} 
             alt={staff.name} 
             className="staff-image"
-            onError={(e) => {
+            /*onError={(e) => {
               e.target.src = '/logo192.png'; // Image par défaut si l'image ne charge pas
-            }}
+            }}*/
             width="100%" 
         style={{ borderRadius: "10px", marginBottom: "10px" }}
           />
